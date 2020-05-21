@@ -1,0 +1,4 @@
+Experienced System Administrator and Cloud focused looking for new ways to architect and deploy things. I don't like to do boring stuff repeatedly. 
+In case I need I'll find a way to automate it. I'm a faster learner and I love to learn new things. I do prefer to learn in practice, I'm always doing labs or testing frameworks, solutions, etc..
+My background is infrastructure and deploy things. But I'm making a move to DevOps related. So recently I've taken several mini-courses of development and microservices. 
+I've learned HTML, CSS, React, VueJS, NodeJS and Python. Now I know how to build and consume API's. 

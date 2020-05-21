@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+@tailwind base;
+
+
+@media print
+{    
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+
+    body {
+      background-color: white !important;
+    }
+
+    main  {
+      @apply box-border my-0 mx-auto relative rounded-none shadow-none !important;  
+    }
+
+    .resume .left-content {
+      @apply col-span-4 bg-nord2 text-nord6 pt-4 min-h-full rounded-none !important;
+    }
+
+    .resume .right-content {
+      @apply col-span-8 text-nord0 pt-4 pl-4 pr-2 bg-nord6 min-h-full rounded-none !important;
+    }    
+}
+
+body {
+  @apply bg-nord8 text-sm;
+}
+
+main  {
+  @apply box-border my-0 mx-auto shadow-md relative;  
+}
+
+.resume {
+  width: 210mm;
+  height: 297mm;
+}
+
+.resume .left-content {
+  @apply col-span-4 bg-nord2 text-nord6 pt-4 rounded-tl-lg min-h-full;
+}
+
+.resume .left-content .profile {
+  @apply text-center pt-4;
+}
+
+.resume .left-content .profile .job-title {
+  @apply text-lg pb-6;
+}
+
+.resume .left-content .personal {
+  @apply pl-6;
+}
+
+.resume .left-content .personal .item .title {
+  @apply text-nord11 text-lg font-semibold pb-1 uppercase;
+}
+
+.resume .left-content .personal .item .subtitle {
+  @apply text-nord11 text-xs font-medium pt-2 uppercase;
+}
+
+.resume .left-content .personal .details{
+  @apply w-full pr-6 pb-3;
+}
+
+.resume .left-content .personal .languages{
+  @apply w-full pr-6 py-3;
+}
+
+.resume .left-content .personal .skill {
+  @apply w-full pr-6 py-1;
+}
+
+.resume .left-content .personal .skill .skill-bar {
+  @apply shadow w-full bg-nord4;
+}
+
+.resume .left-content .personal .skill .skill-bar .skill-bar-style {
+  @apply bg-nord14 text-xs leading-none py-1 text-center text-nord6;
+}
+
+.resume .left-content .personal .links {
+  @apply w-full pr-6 py-3;
+}
+
+.resume .left-content .personal .links ul {
+  @apply flex flex-row flex-wrap;
+}
+
+.resume .left-content .personal .links li {
+  @apply px-2 py-1;
+}
+
+.resume .left-content .personal .skills {
+  @apply w-full pr-6 py-3;
+}
+
+.resume .right-content {
+  @apply col-span-8 min-h-full text-nord0 pt-4 pl-4 pr-2 bg-nord6 rounded-tr-lg;
+}
+
+.resume .right-content .section.profile .content {
+  @apply leading-snug;
+}
+
+.resume .right-content .section .title {
+  @apply text-nord11 text-xl font-semibold py-2;
+}
+
+ul .history-item {
+  @apply pb-2;
+}
+
+ul .history-item .history-title {
+  @apply font-medium uppercase;
+}
+
+ul .history-item .history-timespan {
+  @apply font-light text-nord0;
+}
+
+.resume .right-content .section.courses ul .history-item ul {
+  @apply flex flex-row flex-wrap;
+}
+
+.resume .right-content .section.courses ul .history-item ul li {
+  @apply px-1 mr-1 rounded bg-nord4 text-xs;
+}
+.resume .footer {
+  @apply absolute text-center text-nord6 inset-x-0 bottom-0 bg-auto bg-nord11;
+  
+}
+
+@tailwind components;
+
+
+@tailwind utilities;
