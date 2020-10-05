@@ -1,0 +1,20 @@
+version: "3.8"
+services:
+
+  watch:
+    image: cv-rafael
+    build: .
+    volumes:
+      - ./app:/usr/src/app/app
+    restart: on-failure
+
+  http:
+    image: nginx:1.19.2
+    ports:
+      - "8080:80"
+    volumes:
+      - ./app/cv:/usr/share/nginx/html
+
+
+
+
